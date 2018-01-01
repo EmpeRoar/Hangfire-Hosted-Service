@@ -4,6 +4,7 @@
     <UserSecretsId>aspnet-HostedService-57911142-DCCD-4126-BCC5-D651FD77F9AE</UserSecretsId>
   </PropertyGroup>
   <ItemGroup>
+    <PackageReference Include="HangFire" Version="1.6.17" />
     <PackageReference Include="Microsoft.AspNetCore.All" Version="2.0.3" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="2.0.1" PrivateAssets="All" />
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.0.1" PrivateAssets="All" />

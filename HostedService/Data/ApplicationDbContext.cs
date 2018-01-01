@@ -9,10 +9,14 @@ namespace HostedService.Data
 {
     public class ApplicationDbContext : IdentityDbContext<ApplicationUser>
     {
+        
+
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options)
             : base(options)
         {
         }
+
+        public virtual DbSet<Person> Persons { get; set; }
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

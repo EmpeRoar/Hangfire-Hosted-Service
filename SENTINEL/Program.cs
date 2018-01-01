@@ -8,7 +8,7 @@ using Microsoft.AspNetCore.Hosting;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.Logging;
 
-namespace HostedService
+namespace SENTINEL
 {
     public class Program
     {
@@ -19,7 +19,6 @@ namespace HostedService
 
         public static IWebHost BuildWebHost(string[] args) =>
             WebHost.CreateDefaultBuilder(args)
-                .UseShutdownTimeout(TimeSpan.FromSeconds(10))
                 .UseStartup<Startup>()
                 .Build();
     }
